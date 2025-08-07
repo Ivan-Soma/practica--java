@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pre-página</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <div class="fondo" id="fondo"></div>
+
+  <div class="card">
+    <div class="melting-text-container">
+      <h1 class="melting-text">BIENVENIDO</h1>
+    </div>
+
+    <h4>¿Cuál es tu nombre?</h4>
+
+    <input type="text" id="nombre" placeholder="Escribí tu nombre">
+
+    <div id="mayorDeEdadContainer" style="display: none; margin-top: 10px; color: white; font-size: 0.9rem;">
+    <label>
+        <input type="checkbox" id="mayorDeEdadCheckbox" />
+        Soy mayor de 18 años
+    </label>
+    <span></span>
+    </div>
+    <button onclick="guardarNombre()">Entrar</button>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
