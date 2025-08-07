@@ -133,15 +133,39 @@ button:hover {
   }
 }
 
-#mayorDeEdadContainer label {
-  cursor: pointer;
-  user-select: none;
+#mayorDeEdadContainer {
+  margin-top: 10px;
+  color: white;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center; /* ✅ Esto alinea verticalmente */
+  gap: 8px; /* Espaciado entre checkbox y texto */
 }
 
 #mayorDeEdadCheckbox {
-  margin-right: 8px;
-  width: 16px;
-  height: 16px;
-  accent-color: #6F5E86; /* color acorde a tu gradiente */
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #FFD078;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle; /* ✅ Esto ayuda también */
+}
+
+#mayorDeEdadCheckbox:checked {
+  background-color: #FFD078;
+}
+
+#mayorDeEdadCheckbox:checked::after {
+  content: "✓";
+  color: #3D3056;
+  font-size: 14px;
+  position: absolute;
+  top: -1px;
+  left: 3px;
 }
 
