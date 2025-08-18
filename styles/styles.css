@@ -24,6 +24,60 @@ body {
   transition: transform 0.1s ease-out;
 }
 
+.fondomain {
+  background-image: url(../assets/fondoPrepage.svg);
+}
+
+.tituloBnvnd {
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(255, 239, 239, 0.139);
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.carrito-container {
+  background: rgba(255, 239, 239, 0.139);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 450px;
+  margin: 20px auto;
+}
+
+.carrito-container h2 {
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.carrito-container button {
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6a5acd;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.carrito-container button:hover {
+  background-color: #483d8b;
+}
+
+#listaCarrito {
+  margin-top: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+#listaCarrito li {
+  padding: 6px;
+  border-bottom: 1px solid #ddd;
+}
+
+
 .card {
   background-color: #cccccc26;
   position: relative;
@@ -45,11 +99,11 @@ body {
   color: white;
 }
 
-h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: white;
+.tituloparamain {
+  color: black;
 }
+
+
 
 input {
   padding: 10px;
