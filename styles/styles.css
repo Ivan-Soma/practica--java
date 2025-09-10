@@ -1,3 +1,6 @@
+/* =====================
+   BODY Y RESET
+===================== */
 body {
   font-family: sans-serif;
   display: flex;
@@ -11,6 +14,9 @@ body {
   background-color: #f9f9f9;
 }
 
+/* =====================
+   FONDO INDEX
+===================== */
 .fondo {
   background-image: url(../assets/fondoPrueba.svg);
   background-size: cover;
@@ -24,110 +30,19 @@ body {
   transition: transform 0.1s ease-out;
 }
 
+/* =====================
+   FONDO MAIN
+===================== */
 .fondomain {
   background-image: url(../assets/fondoPrepage.svg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 }
 
-.tituloBnvnd {
-  font-size: 2rem;
-  color: white;
-  background-color: rgba(255, 239, 239, 0.139);
-  padding: 5px;
-  border-radius: 20px;
-}
-
-.carrito-container {
-  background: rgba(255, 239, 239, 0.139);
-  padding: 15px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  max-width: 450px;
-  margin: 20px auto;
-}
-
-.carrito-container h2 {
-  margin-bottom: 10px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.carrito-container button {
-  margin: 5px;
-  border: none;
-  border-radius: 8px;
-  background-color: #6a5acd;
-  color: white;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.carrito-container button:hover {
-  background-color: #483d8b;
-}
-
-#listaCarrito {
-  margin-top: 15px;
-  list-style: none;
-  padding: 0;
-}
-
-#listaCarrito li {
-  padding: 6px;
-  border-bottom: 1px solid #ddd;
-}
-
-
-.card {
-  background-color: #cccccc26;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 40px;
-  border-radius: 20px;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.05);
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 15px -5px rgba(124, 58, 237, 0.2);
-}
-
-.card h4 {
-  color: white;
-}
-
-.tituloparamain {
-  color: black;
-}
-
-
-
-input {
-  padding: 10px;
-  font-size: 1rem;
-  margin-bottom: 10px;
-  width: 250px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
+/* =====================
+   MELTING TEXT INDEX
+===================== */
 .melting-text-container {
   position: relative;
   overflow: hidden;
@@ -168,32 +83,75 @@ button:hover {
 }
 
 @keyframes melt {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(20px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(20px); }
 }
 
 @keyframes drip {
-  0%, 100% {
-    transform: scaleY(1);
-    opacity: 0.5;
-  }
-  50% {
-    transform: scaleY(1.1);
-    opacity: 0.3;
-  }
+  0%, 100% { transform: scaleY(1); opacity: 0.5; }
+  50% { transform: scaleY(1.1); opacity: 0.3; }
 }
 
+/* =====================
+   CARD INDEX
+===================== */
+.card {
+  background-color: #cccccc26;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 40px;
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.05);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -5px rgba(124, 58, 237, 0.2);
+}
+
+.card h4 {
+  color: white;
+}
+
+/* =====================
+   INPUT Y BOTON INDEX
+===================== */
+input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* =====================
+   CHECKBOX INDEX
+===================== */
 #mayorDeEdadContainer {
   margin-top: 10px;
   color: white;
   font-size: 0.9rem;
   display: flex;
-  align-items: center; /* ✅ Esto alinea verticalmente */
-  gap: 8px; /* Espaciado entre checkbox y texto */
+  align-items: center;
+  gap: 8px;
 }
 
 #mayorDeEdadCheckbox {
@@ -207,7 +165,7 @@ button:hover {
   position: relative;
   cursor: pointer;
   display: inline-block;
-  vertical-align: middle; /* ✅ Esto ayuda también */
+  vertical-align: middle;
 }
 
 #mayorDeEdadCheckbox:checked {
@@ -223,3 +181,96 @@ button:hover {
   left: 3px;
 }
 
+/* =====================
+   MAIN - SALUDO
+===================== */
+.tituloBnvnd {
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(255, 239, 239, 0.139);
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* =====================
+   MAIN - CARRITO
+===================== */
+.carrito-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  max-width: 480px;
+  margin: 20px auto;
+}
+
+.carrito-container h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#listaCarrito {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+#listaCarrito li {
+  padding: 8px 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Inputs y botones solo dentro del carrito */
+.carrito-container input[type="text"], 
+.carrito-container input[type="number"] {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.carrito-container button {
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #6a5acd;
+  transition: all 0.3s ease;
+  margin: 5px;
+
+}
+
+.carrito-container button:hover {
+  background-color: #483d8b;
+}
+
+/* Mensajes carrito */
+#mensajeCarrito {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* =====================
+   RESPONSIVE MAIN
+===================== */
+@media (max-width: 500px) {
+  .carrito-container {
+    width: 90%;
+    padding: 20px;
+  }
+}

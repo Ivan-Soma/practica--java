@@ -1,16 +1,28 @@
-# practica--java
+# **🔥 SIMULADOR DE CARRITO DE COMPRAS 🔥**
 
-# Simulador de carrito de compras
+Este proyecto es un simulador interactivo de carrito de compras realizado con JavaScript, HTML y CSS.
+Permite al usuario ingresar su nombre, confirmar que es mayor de 18 años y administrar un carrito de productos de forma dinámica, directamente en la página web, sin usar alert(), prompt() ni console.log().
 
-Este proyecto es un simulador básico realizado en JavaScript.  
-Permite al usuario ingresar su nombre, validar si es mayor de edad y administrar un carrito de compras sencillo.  
+## **OBJETIVOS CUMPLIDOS**
 
-La interacción se realiza mediante cuadros de diálogo (`alert`, `prompt`, `confirm`) y la consola de JavaScript.  
+Uso de variables, arrays y objetos para manejar productos.
 
+Creación de funciones con entrada, proceso y salida.
 
-### Objetivos cumplidos
-- Declaración de variables, constantes y arrays.
-- Creación de funciones con entrada, proceso y salida.
-- Uso de condicionales (`if/else`) y ciclo de iteración (`for`).
-- Interacción con el usuario mediante `alert`, `prompt`, `confirm`.
-- Uso de `console.log` para mostrar resultados.
+Interacción mediante eventos del DOM y validaciones de inputs.
+
+Almacenamiento en localStorage para mantener datos del usuario y del carrito.
+
+Mensajes y lista de productos mostrados dinámicamente en la página.
+
+Estética visual con CSS: fondos, tarjetas, animaciones y centrado de botones.
+
+## **COMO USAR** 
+
+Abrir index.html en un navegador.
+
+Ingresar nombre y confirmar mayor de 18 años.
+
+Presionar “Entrar” para acceder al carrito.
+
+Agregar productos, ver la lista o vaciar el carrito; los datos se mantienen gracias a localStorage.
