@@ -33,7 +33,7 @@ body {
 /* =====================
    FONDO MAIN
 ===================== */
-.fondomain {
+body.fondomain {
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
@@ -44,6 +44,14 @@ body {
   padding: 0;
   overflow: auto;              /* habilita scroll */
   background-color: #f9f9f9;
+}
+.fondomain {
+  background-image: url(../assets/fondoPrepage.svg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* para que el fondo quede fijo al scrollear */
+  width: 100%;
+  min-height: 100vh;
 }
 
 
