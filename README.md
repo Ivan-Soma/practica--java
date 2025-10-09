@@ -1,28 +1,45 @@
-# **🔥 SIMULADOR DE CARRITO DE COMPRAS 🔥**
+# 🍷 **Proyecto Final - Simulador de Vinoteca Interactiva**
 
-Este proyecto es un simulador interactivo de carrito de compras realizado con JavaScript, HTML y CSS.
-Permite al usuario ingresar su nombre, confirmar que es mayor de 18 años y administrar un carrito de productos de forma dinámica, directamente en la página web, sin usar alert(), prompt() ni console.log().
+Este proyecto es un **simulador interactivo de compra de vinos**, desarrollado con **HTML, CSS y JavaScript**.  
+Simula el flujo completo de un **E-commerce**, desde el ingreso del usuario hasta la gestión de un **carrito de compras funcional**, utilizando datos remotos y almacenamiento local.
 
-## **OBJETIVOS CUMPLIDOS**
+---
 
-Uso de variables, arrays y objetos para manejar productos.
+## 🚀 **Características principales**
 
-Creación de funciones con entrada, proceso y salida.
+✅ **Inicio interactivo**
+- Pantalla de bienvenida donde el usuario ingresa su nombre y confirma ser mayor de edad.  
+- Los datos se guardan en `localStorage` para personalizar la experiencia.
 
-Interacción mediante eventos del DOM y validaciones de inputs.
+✅ **Catálogo dinámico de vinos**
+- Los productos (5 variedades de vino) se cargan desde un archivo `JSON` externo mediante `fetch`.  
+- Cada vino se muestra como una **card visual**, con imagen, descripción, precio y botón para agregar al carrito.
 
-Almacenamiento en localStorage para mantener datos del usuario y del carrito.
+✅ **Carrito funcional**
+- El usuario puede:
+  - Agregar productos al carrito.
+  - Ver el detalle de su compra en un modal moderno.
+  - Eliminar productos individualmente 🗑️.
+  - Vaciar todo el carrito con confirmación.
+- Todo se guarda en `localStorage`, conservando los datos aunque se recargue la página.
 
-Mensajes y lista de productos mostrados dinámicamente en la página.
+✅ **Interfaz moderna**
+- Estilos creados con **CSS puro**, incluyendo fondos, tarjetas con efectos, animaciones y diseño responsive.
+- Ventanas emergentes personalizadas con **SweetAlert2** (reemplazo de `alert`, `prompt`, `confirm`).
 
-Estética visual con CSS: fondos, tarjetas, animaciones y centrado de botones.
+---
 
-## **COMO USAR** 
+## 🧠 **Tecnologías utilizadas**
 
-Abrir index.html en un navegador.
+| Tipo | Herramienta |
+|------|--------------|
+| Lenguaje principal | JavaScript (ES6+) |
+| Librería externa | SweetAlert2 |
+| Estilos | CSS3 |
+| Estructura | HTML5 |
+| Almacenamiento | localStorage |
+| Datos remotos | JSON simulado (`data/vinos.json`) |
 
-Ingresar nombre y confirmar mayor de 18 años.
+---
 
-Presionar “Entrar” para acceder al carrito.
 
-Agregar productos, ver la lista o vaciar el carrito; los datos se mantienen gracias a localStorage.
