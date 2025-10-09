@@ -34,11 +34,18 @@ body {
    FONDO MAIN
 ===================== */
 .fondomain {
-  background-image: url(../assets/fondoPrepage.svg);
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* para que el contenido no quede centrado verticalmente */
+  min-height: 100vh;           /* permite que el body crezca si hay mucho contenido */
+  margin: 0;
+  padding: 0;
+  overflow: auto;              /* habilita scroll */
+  background-color: #f9f9f9;
 }
+
 
 /* =====================
    MELTING TEXT INDEX
