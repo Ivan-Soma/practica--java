@@ -8,31 +8,47 @@ nombreInput.addEventListener("input", () => {
   mayorContainer.style.display = nombreInput.value.trim() ? "block" : "none";
 });
 
-// Función para guardar nombre y redirigir
+// Función principal al presionar "Entrar"
 btnEntrar.addEventListener("click", () => {
   const nombre = nombreInput.value.trim();
 
   if (!nombre) {
-    mostrarMensajeGeneral("Por favor, ingresá tu nombre.", true);
+    Swal.fire({
+      icon: "warning",
+      title: "Falta tu nombre",
+      text: "Por favor, ingresá tu nombre para continuar.",
+      confirmButtonColor: "#6a5acd",
+    });
     return;
   }
 
   if (!mayorCheckbox.checked) {
-    mostrarMensajeGeneral("Debes confirmar que sos mayor de 18 años para continuar.", true);
+    Swal.fire({
+      icon: "error",
+      title: "Confirmación necesaria",
+      text: "Debes confirmar que sos mayor de 18 años para continuar.",
+      confirmButtonColor: "#d33",
+    });
     return;
   }
 
   localStorage.setItem("usuarioNombre", nombre);
-  window.location.href = "main.html";
+
+  Swal.fire({
+    icon: "success",
+    title: `¡Bienvenido, ${nombre}!`,
+    text: "Serás redirigido a la tienda.",
+    timer: 1500,
+    showConfirmButton: false,
+  }).then(() => {
+    window.location.href = "main.html";
+  });
 });
 
-// Mostrar mensajes en DOM
-function mostrarMensajeGeneral(texto, error = false) {
-  const span = mayorContainer.querySelector("span");
-  span.textContent = texto;
-  span.style.color = error ? "red" : "green";
-
-  setTimeout(() => {
-    span.textContent = "";
-  }, 3000);
-}
+// (Extra) Efecto de movimiento en el fondo
+document.addEventListener("mousemove", (e) => {
+  const fondo = document.getElementById("fondo");
+  const x = (window.innerWidth - e.pageX * 2) / 100;
+  const y = (window.innerHeight - e.pageY * 2) / 100;
+  fondo.style.transform = `translate(${x}px, ${y}px)`;
+});

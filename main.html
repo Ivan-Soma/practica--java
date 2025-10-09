@@ -2,39 +2,21 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Página principal</title>
+  <title>Catálogo de Vinos</title>
   <link rel="stylesheet" href="./styles/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body class="fondomain">
-  <div>
-    <article class="tituloBnvnd">
-      <h1 id="saludo">Cargando...</h1>
-    </article>
+  <header class="header">
+    <h1 id="saludo">Cargando...</h1>
+    <button id="btnCarritoIcono" class="carrito-icono">🛒 Ver carrito</button>
+  </header>
 
-    <div class="carrito-container">
-      <h2>Carrito de compras</h2>
-
-      <!-- Formulario para agregar productos -->
-      <form id="formProducto">
-        <input type="text" id="productoNombre" placeholder="Nombre del producto" required>
-        <input type="number" id="productoPrecio" placeholder="Precio" min="0" step="0.01" required>
-        <input type="number" id="productoStock" placeholder="Stock disponible" min="1" required>
-        <button type="submit">Agregar producto</button>
-      </form>
-
-      <!-- Mensajes -->
-      <div id="mensajeCarrito" style="margin-top:10px; font-weight:bold;"></div>
-
-      <!-- Botones de acción -->
-      <div style="margin-top:10px;">
-        <button id="btnMostrar">Ver carrito</button>
-        <button id="btnVaciar">Vaciar carrito</button>
-      </div>
-
-      <!-- Lista del carrito -->
-      <ul id="listaCarrito" style="margin-top:10px;"></ul>
-    </div>
-  </div>
+  <main>
+    <section id="productosContainer" class="productos-container">
+      <!-- Cards generadas dinámicamente -->
+    </section>
+  </main>
 
   <script src="./js/main.js"></script>
 </body>

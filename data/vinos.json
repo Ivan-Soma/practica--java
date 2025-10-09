@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nombre": "Malbec Reserva",
+    "precio": 6500,
+    "stock": 10,
+    "imagen": "assets/vino2.jpg",
+    "descripcion": "Vino tinto intenso con notas de frutos rojos."
+  },
+  {
+    "id": 2,
+    "nombre": "Cabernet Sauvignon",
+    "precio": 7200,
+    "stock": 8,
+    "imagen": "assets/vino1.jpg",
+    "descripcion": "De cuerpo medio, con aroma a vainilla y roble."
+  },
+  {
+    "id": 3,
+    "nombre": "Merlot Clásico",
+    "precio": 5900,
+    "stock": 12,
+    "imagen": "assets/vino3.jpg",
+    "descripcion": "Suave y equilibrado, ideal para acompañar carnes."
+  },
+  {
+    "id": 4,
+    "nombre": "Syrah Premium",
+    "precio": 8100,
+    "stock": 7,
+    "imagen": "assets/vino4.jpg",
+    "descripcion": "Vino complejo con notas especiadas y taninos firmes."
+  },
+  {
+    "id": 5,
+    "nombre": "Blend Selección",
+    "precio": 9400,
+    "stock": 5,
+    "imagen": "assets/vino5.jpg",
+    "descripcion": "Mezcla elegante de Malbec, Cabernet y Merlot."
+  }
+]
